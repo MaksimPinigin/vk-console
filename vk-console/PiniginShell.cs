@@ -12,6 +12,7 @@ namespace vk_console
         {
             while (true)
             {
+                Console.Write(input_prefix);
                 string input_text = Console.ReadLine();
                 string[] param = input_text.Split(' ');
                 // Actions...
