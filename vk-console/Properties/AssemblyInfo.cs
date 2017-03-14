@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов, чтобы изменить сведения,
 // связанные со сборкой.
-[assembly: AssemblyTitle("VK Console")]
+[assembly: AssemblyTitle("NovoImpossible VK Console")]
 [assembly: AssemblyDescription("VK Console for VK.com")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Maksim Pinigin")]
-[assembly: AssemblyProduct("VK Product")]
+[assembly: AssemblyProduct("NovoImpossible VK Product")]
 [assembly: AssemblyCopyright("Copyright © 2017, Maksim Pinigin")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
