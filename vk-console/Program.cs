@@ -10,6 +10,7 @@ namespace vk_console
     {
         static void Main(string[] args)
         {
+            ConfigFile.CheckConfigFile();
             Console.WriteLine("Starting Pinigin Shell...");
             PiniginShell.Shell("VK> ");
         }
