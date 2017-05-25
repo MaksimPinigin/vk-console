@@ -18,6 +18,12 @@ namespace vk_console
             }
         }
 
+        public static JArray Parse()
+        {
+            CheckConfigFile();
+            return JArray.Parse(File.ReadAllText("config.json"));
+        }
+
         public static void GenerateConfigFile()
         {
             PiniginFunctions.WriteColorLine("WARNING: config.json not found!", ConsoleColor.Yellow);
