@@ -18,16 +18,16 @@ namespace vk_console
             }
         }
 
-        public static JArray Parse()
+        public static JObject Parse()
         {
             CheckConfigFile();
-            return JArray.Parse(File.ReadAllText("config.json"));
+            return JObject.Parse(File.ReadAllText("config.json"));
         }
 
         public static void GenerateConfigFile()
         {
             PiniginFunctions.WriteColorLine("WARNING: config.json not found!", ConsoleColor.Yellow);
-            Console.WriteLine("===== WELCOME TO NOVOIMPOSSIBLE VK CONSOLE =====");
+            Console.WriteLine("===== WELCOME TO PINIGIN VK CONSOLE =====");
             Console.Write("Please, enter your id: "); string user_id = Console.ReadLine();
             PiniginFunctions.WriteColorLine("TIP: To get token authorize here: https://vk.cc/6n64Jy", ConsoleColor.Cyan);
             Console.Write("Enter your token: "); string access_token = Console.ReadLine();
