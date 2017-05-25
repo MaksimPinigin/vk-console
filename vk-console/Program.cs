@@ -10,7 +10,9 @@ namespace vk_console
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Pinigin VK Console (c) 2017, Maksim Pinigin");
             ConfigFile.CheckConfigFile();
+            Scripts.WelcomeMessage.Execute();
             Console.WriteLine("Starting Pinigin Shell...");
             PiniginShell.Shell("VK> ");
         }

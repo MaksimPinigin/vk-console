@@ -16,6 +16,7 @@ namespace vk_console
                 string input_text = Console.ReadLine();
                 string[] param = input_text.Split(' ');
                 // Actions...
+                CommandHandler.Command(param);
             }
         }
     }
