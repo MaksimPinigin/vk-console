@@ -8,7 +8,7 @@ namespace vk_console
 {
     class CommandHandler
     {
-        public static void Handle(string[] args)
+        public static void Handle(string input_text, string[] args)
         {
             if(args[0] == "exit")
             {
@@ -17,6 +17,10 @@ namespace vk_console
             else if(args[0] == "")
             {
                 // none
+            }
+            else if(args[0] == "setstatus")
+            {
+                Scripts.SetStatus.Execute(input_text);
             }
             else
             {
