@@ -16,10 +16,10 @@ namespace vk_console
 {
     class VkApi
     {
-        static int client_id = 5650592;
-        static string client_secret = "OmLGswSuYrZJAcxmyVbO";
-        static string service_key = "ec33f0bbec33f0bbec6252a1f9ec65c81beec33ec33f0bbb4fbc863b8bdce142e00f92d";
-        static string secure_key = "667e154b667e154b662fb7512e66282deb6667e667e154b3eb70c842ef25c92d4712b4a";
+        static int client_id = -1;
+        static string client_secret = "";
+        static string service_key = "";
+        static string secure_key = "";
         static string api_version = "5.62";
         static string api_language = "en";
         static Uri base_url = new Uri("https://api.vk.com");
