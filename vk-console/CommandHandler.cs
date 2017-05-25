@@ -8,7 +8,7 @@ namespace vk_console
 {
     class CommandHandler
     {
-        public static void Command(string[] args)
+        public static void Handle(string[] args)
         {
             if(args[0] == "exit")
             {
