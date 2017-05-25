@@ -35,6 +35,17 @@ namespace vk_console
             return user_array["response"][0];
         }
 
+        public static JObject SetStatus(string access_token, string text)
+        {
+            var client = new RestClient();
+            client.BaseUrl = base_url;
+            var request = new RestRequest();
+            request.Resource = $"/method/status.set?text={text}&access_token={access_token}&v={api_version}&lang={api_language}";
+            IRestResponse response = client.Execute(request);
+            JObject api_response = JObject.Parse(response.Content);
+            return api_response;
+        }
+
         
     }
 }
