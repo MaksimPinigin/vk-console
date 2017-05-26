@@ -26,6 +26,10 @@ namespace vk_console
             {
                 Scripts.SetOnline.Execute();
             }
+            else if(args[0] == "setoffline")
+            {
+                Scripts.SetOffline.Execute();
+            }
             else
             {
                 PiniginFunctions.WriteColorLine("ERROR: Command not found", ConsoleColor.Red);
