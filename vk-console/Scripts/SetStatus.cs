@@ -26,7 +26,7 @@ namespace vk_console.Scripts
             }
             else
             {
-                Console.WriteLine("Usage: setstatus [text]");
+                Console.WriteLine("Usage: setstatus <text>");
             }
         }
     }
