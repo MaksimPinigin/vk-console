@@ -67,5 +67,16 @@ namespace vk_console
             JObject api_response = JObject.Parse(response.Content);
             return api_response;
         }
+
+        public static JObject WallPost(string access_token, int owner_id, string text)
+        {
+            var client = new RestClient();
+            client.BaseUrl = base_url;
+            var request = new RestRequest();
+            request.Resource = $"/method/wall.post?access_token={access_token}&v={api_version}&lang={api_language}&owner_id={owner_id}&message={text}";
+            IRestResponse response = client.Execute(request);
+            JObject api_response = JObject.Parse(response.Content);
+            return api_response;
+        }
     }
 }
