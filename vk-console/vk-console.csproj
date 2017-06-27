@@ -54,6 +54,7 @@
     <Compile Include="PiniginShell.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scripts\Post.cs" />
     <Compile Include="Scripts\SetOffline.cs" />
     <Compile Include="Scripts\SetOnline.cs" />
     <Compile Include="Scripts\SetStatus.cs" />
