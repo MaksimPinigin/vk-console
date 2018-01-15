@@ -14,7 +14,7 @@ namespace vk_console.Scripts
             if (param.Length > 1)
             {
                 var config = ConfigFile.Parse();
-                if (int.TryParse(param[1], out int result))
+                if (Int32.TryParse(param[1], out int result))
                 {
                     int owner_id = result;
                     string text = input_text.Replace("post " + param[1] + " ", "");
